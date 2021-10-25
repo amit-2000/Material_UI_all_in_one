@@ -10,7 +10,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 import TableCell from "@material-ui/core/TableCell";
-
+import { Typography, Box } from "@material-ui/core";
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
 }
@@ -35,11 +35,37 @@ export default function ListMUI() {
             </ListItem>
             <ListItem button>
               <ListItemIcon>
-                <InboxIcon />
+                <InboxIcon fontSize="medium" />
               </ListItemIcon>
               <ListItemText primary="Inbox" />
             </ListItem>
           </List>
+          <Box
+            sx={{
+              display: "table",
+            }}
+            ml={2}
+          >
+            <InboxIcon
+              fontSize="samll"
+              sx={{
+                marginRight: "10px",
+                display: "table-cell",
+                verticalAlign: "middle",
+              }}
+              color="warning"
+            />
+            <Typography
+              sx={{
+                marginRight: "10px",
+                display: "table-cell",
+                verticalAlign: "middle",
+              }}
+            >
+              {" "}
+              This is icon
+            </Typography>
+          </Box>
           <h4>__Table__</h4>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
