@@ -16,6 +16,7 @@ import TypographyMUI from "./component/Typography";
 import ProgressMUI from "./component/Progress";
 import ContainerMUI from "./component/Container";
 import GridMUI from "./component/Grid";
+import GridPart2 from "./component/GridPart2";
 ReactDOM.render(
   <React.StrictMode>
     <ButtonMUI />
@@ -33,6 +34,7 @@ ReactDOM.render(
     <ProgressMUI />
     <ContainerMUI />
     <GridMUI />
+    <GridPart2 />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -66,7 +66,7 @@ export default function GridMUI() {
             maxWidth="95%"
             // height="50vh"
             // justifyContent="center"
-            // alignItems="center"
+            // mignItems="center"
             // bgcolor="secondary.main"
           >
             {/* Total is 12  so 12/4 = 3 */}
